@@ -1,0 +1,16 @@
+#heading{
+    text-align: left;
+}
+#heading h3{
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+#heading h1{
+    font-size: xx-large;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+    
+}

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    section{
+        @apply py-[75px]
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-[1280px] my-0 mx-auto py-0 px-[0.938em]; 
+    }
+    .column{
+        @apply  mx-[0.938em];
+    }
+    .column .row{
+        @apply py-0 px-[0.938em];
+    }
+    .flexwrap{
+        @apply flex flex-wrap;
+    }
+    .flexcenter{
+        @apply flex justify-center items-center;
+    }
+    .flexitem{
+        @apply flex items-center;
+    }
+    .flexcol{
+        @apply flex flex-col gap-[1em];
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .container{
+        @apply py-0 px-[2em];
+    }   
+}
