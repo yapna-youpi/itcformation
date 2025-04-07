@@ -1,0 +1,104 @@
+ .company {
+    padding: 5% 0%;
+}
+ .company .wrapper {
+    width: 90%;
+    margin: auto;
+}
+ .company h1 {
+    font-size: 1.8em;
+    color: var(--blue);
+}
+ .company .item {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 4%;
+    border-radius: 16px;
+    color: var(--white);
+    /* background: #FDC830;  fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #a52c2c, #E8B012);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #a52c2c, #E8B012); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ .company .right {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+     .company h1 {
+        /* font-size: 2.5em; */
+    }
+     .company .left {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid #000; */
+    }
+     .company .item {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+     .company h1 {
+        font-size: 2.5em;
+    }
+     .company .left {
+        max-width: 800px;
+    }
+     .company .item {
+        padding: 2%;
+        background: none;
+        color: var(--blue);
+        transition: all 0.3s ease-out;
+    }
+     .company .item .icon {
+        color: var(--orange);
+    }
+     .company .item:hover {
+        cursor: pointer;
+        background: -webkit-linear-gradient(to right bottom, #a52c2c, #E8B012);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right bottom, #a52c2c, #E8B012); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: var(--white);
+        /* transform: scale(1.1, 1.1); */
+        transform: translateY(-5px);
+    }
+     .company .item:hover .icon {
+        color: var(--white);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     .company h1 {
+        font-size: 2.8em;
+    }
+     .company .contain {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+     .company .left {
+        flex: 3;
+        max-width: none;
+    }
+     .company .item {
+        width: 40%;
+        max-width: 400px;
+    }
+     .company .right {
+        flex: 2;
+        display: block;
+        max-height: 800px;
+        overflow: hidden;
+    }
+     .company img {
+        display: block;
+        width: 100%;
+        border-radius: 15px;
+    }
+     .company p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

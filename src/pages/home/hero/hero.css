@@ -5,13 +5,19 @@
     top: 0;
     left: 0;
     z-index: -1;
-    padding: 20% 50px 0 0;
-    color: #fff;
+    padding: 20% 50px 0 50px;
     background-image: url("../../../../images/bg.webp");
     background-color: var(--primaryColor);
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
     background-size: cover;
+}
+.hero-content{
+    width: 90%;
+    margin: 75px auto !important;
+    padding: 25px 15px;
+    color: #fff;
+    /* background-color: yellowgreen; */
 }
 .btn_group{
     margin-top: 25px;
@@ -29,19 +35,30 @@
 .hero .btn:hover span{
     color: var(--primaryColor);
 }
+.hero-content-para{
+    width: 75%;
+}
 
 @media only screen and (max-width: 768px) {
     .margin{
         height: 40px;
     }
     .hero{
-        height: 80vh;
+        height: 130vh;
         background-position: right; 
-        padding-top: 50%;
+        padding-top: 30%;
         padding-right: 0      
     }
     .hero .row{
         width: 100%;
     }
+   
     
+    
+}
+@media only screen and (max-width: 992px) {
+    .hero-content {
+        padding: 0;
+    }
+
 }

@@ -14,6 +14,7 @@ export default {
       lightTextColor: "#7c889a",
       borderColor: "#e5e8ec",
       darkColor: "#0a021c",
+      limer: "#39a935",
     },
     boxShadow: {
       panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px"

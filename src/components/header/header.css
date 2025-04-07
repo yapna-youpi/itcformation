@@ -1,6 +1,7 @@
 header{
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 30px;
+    margin: 0 auto;
+    width: 90%;
     position: relative;
 }
 header ul{
@@ -9,6 +10,7 @@ header ul{
 header ul li a{
     color: #fff;
     font-weight: 500;
+    font-size: 19px;
     transition: 0.5s;
 }
 header ul li a:hover{
@@ -31,14 +33,43 @@ header li{
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+.to-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    top: 85vh;
+    z-index: 100;
+    background: var( --limer);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    transform: translate(150px, 0px);
+}
+.to-up.appear {
+    transform: translate(0px, 0px);
+    border-color: var(--primaryColor);
+}
+.to-up a {
+    color: white;
+}
+
+@media only screen and (min-width: 992px) {
+   
+}
+@media only screen and (max-width: 992px) {
     .start{
         clip-path: none;
+        
     }
     header{
         background-color: var(--primaryColor);
         margin: 0;
         position: relative;
+        width: 100%;
     }
     header ul.flexSB{
         display: none;
@@ -48,8 +79,9 @@ header li{
     }
     header ul li a{
         padding: 10px 0;
-        font-size: 18px;
+        font-size: 20px;
     }
+    
     .toggle{
         display: block;
         position: absolute;
@@ -62,11 +94,13 @@ header li{
     .mobile_nav{
         position: absolute;
         width: 100%;
+        z-index: 1000;
         height: 70vh;
         top: 12.5vh;
         left: 0;
         background-color: var(--secondaryColor);
         padding: 20px 70px;
+        transition: ease-out;
         /* background-color: var(--primaryColor); */
     }
 }
