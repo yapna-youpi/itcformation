@@ -20,6 +20,9 @@
     margin: 20px;
     /* background: var(--color-theme2); */
 }
+.hel{
+    background-color: var(--primaryColor)!important;
+}
 
 
 .blueBg {

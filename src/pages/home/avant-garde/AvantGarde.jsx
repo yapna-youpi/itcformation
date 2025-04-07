@@ -7,9 +7,9 @@ const AvantGarde = () => {
   return (
     <div className='avant-garde my-7'>
         <div className="avant-left ">
-            <h2>Our learning Platform</h2>
-            <h3 className='mt-6'>Our platform Many Courses</h3>
-            <div className='avant-text mt-16'>
+            <h2>Centre d'apprentissage</h2>
+            <h3 className='mt-6'>Nous dispensons en presentiel</h3>
+            <div className='avant-text mt-6'>
                 <div className='avant-i'><i><img src={tru} alt='bonne formation' /></i><p className='ms-5'>Ecole d'apprentissage pratique et facile</p></div>
                 <div className='avant-i'><i><img src={tru} alt='bonne formation' /></i><p className='ms-5'>Ecole d'apprentissage pratique et facile</p></div>
                 <div className='avant-i'><i><img src={tru} alt='bonne formation' /></i><p className='ms-5'>Ecole d'apprentissage pratique et facile</p></div>

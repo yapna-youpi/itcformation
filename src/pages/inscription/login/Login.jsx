@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Helmet from '../../../components/helmet/Helmet';
 import Signup from '../signup/Signup';
 
 
 import './login.css'
+import { useLocation } from 'react-router-dom';
 function Login() {
 
   const [loginEmail, setLoginEmail] = useState('')
@@ -17,7 +18,7 @@ function Login() {
         document.getElementById('banner').classList.toggle('banner')
         document.getElementById('banner').classList.toggle('banner2')
     }
-
+    const location = useLocation  ()
     const formBx = document.querySelector('.formBx');
      //function to permute signin to signup
   const handleSignup = function () {
@@ -39,6 +40,15 @@ function Login() {
     sign.classList.remove('activer');
     formBx.classList.add('desactiver');
   }
+
+  useEffect(() => {
+    const head = document.getElementById('nav');
+    if (location.pathname = "/login")  {
+      head.classList.add('hel');
+    }
+    return ()=> head.classList.remove('hel')
+  }, [])
+  
 
   return (
     <Helmet title="Login">

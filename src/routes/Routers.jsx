@@ -1,7 +1,7 @@
 import {Routes, Route} from "react-router-dom"
 import Home from '../pages/home/Home'
 import About from "../components/about/About"
-import Login from "../pages/home/login/Login"
+import Login from "../pages/inscription/login/Login"
 import Contact from "../components/help/Help"
 
 const Routers = () => {

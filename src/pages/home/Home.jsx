@@ -4,6 +4,8 @@ import AvantGarde from "./avant-garde/AvantGarde";
 import Hero from "./hero/Hero";
 import Company from "./company/Company"
 import Newsletter from "./newsletter/Newsletter";
+import Patner from "./partner/Patner";
+import Faq from "./faq/faq";
 
 const Home = () => {
   return (
@@ -11,7 +13,9 @@ const Home = () => {
       <Hero/>
       <About />
       <AvantGarde/>
+      <Faq />
       <Brand/>
+      <Patner />
       <Newsletter />
       {/* <Company /> */}
     </>

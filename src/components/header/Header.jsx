@@ -19,13 +19,14 @@ const Header = () => {
 			document.body.scrollTop > 600 ||
 			document.documentElement.scrollTop > 600
 		  ) {
-			console.log(" le scrool lancee")
 			toUp.classList.add("appear");
 		  } else {
 			toUp.classList.remove("appear");
 		  }
 		});
 	  }
+
+	  
   
 	  
 	useEffect(() => {
@@ -62,9 +63,9 @@ const Header = () => {
     <>
       <Head/>
     <header id="header" >
-      <nav className="flexSB">
+      <nav className="flexSB" id="nav">
         <ul className={click ? "mobile_nav" : "flexSB"} onClick={()=> setClick(false)}>
-          <li className=" "> <Link to="/">Acceuil</Link></li>
+          <li > <Link to="/">Acceuil</Link></li>
           {
             nav_links.map((route,index)=>(
               <li  key={index}><Link to={route.display}>{route.path}{route.display == "courses" ? <div className="ms-1 fa fa-caret-down"></div> : "" }</Link></li>
