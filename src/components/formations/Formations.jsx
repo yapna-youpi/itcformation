@@ -91,9 +91,9 @@ const Formations = () => {
         </div>
 
         {/* <div className="w-full   bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-20 flex justify-between items-center"> */}
-        <div className="w-full   bg-firstColor shadow-xl shadow-indigo-200 py-10 px-20 flex justify-between items-center">
+        <div className="w-full   bg-firstColor shadow-xl shadow-indigo-200 py-10 px-20 flex flex-col md:flex-row justify-between items-center">
             <p className=" text-white"> <span className="text-4xl font-medium">Contactez Nous</span> <br/> <span className="text-lg">Pour votre enrollement et pour toutes informations suplementaires nous joindres sur Whatsapp </span></p>
-            <a href="https://api.whatsapp.com/send?phone=655840109" target="_blank" rel="noopener noreferrer"><button className="px-5 py-3 rounded-full  font-medium text-slate-700 shadow-xl  hover:bg-slate-200 duration-150  bg-white "><img className='w-28' src={whatsapp} alt="whatsapp" /> </button></a>
+            <a className='mt-5 md:mt-0' href="https://api.whatsapp.com/send?phone=655840109" target="_blank" rel="noopener noreferrer"><button className="px-5 py-3 rounded-full  font-medium text-slate-700 shadow-xl  hover:bg-slate-200 duration-150  bg-white "><img className='w-28' src={whatsapp} alt="whatsapp" /> </button></a>
         </div>
 
     </div>

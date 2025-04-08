@@ -10,7 +10,7 @@ import Formations from "../../components/formations/Formations";
 
 const Home = () => {
   return (
-    <>
+    <div className="text-gray-800">
       <Hero/>
       <About />
       <AvantGarde/>
@@ -20,7 +20,7 @@ const Home = () => {
       <Patner />
       <Newsletter />
       {/* <Company /> */}
-    </>
+    </div>
   );
 };
 

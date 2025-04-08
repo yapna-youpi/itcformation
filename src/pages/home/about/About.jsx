@@ -9,7 +9,7 @@ import about6 from "./assets/about-6.png";
 
 const About = () => {
   return (
-    <div className="about sm:pt-28">
+    <div id="parcourir" className="about sm:pt-28">
       <h2 className="text-center text-xl md:text-5xl font-bold">
         {" "}
         Pourquoi choisir ITC Formation ?

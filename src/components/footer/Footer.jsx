@@ -39,10 +39,10 @@ const Footer = () => {
           <div className="text-fot1">Explore</div>
           <ul className='footer-listy'>
             <li className=''><img src={right} alt="toff" /> Acceuil</li>
-            <li className=''><img src={right} alt="toff" /> Acceuil</li>
-            <li className=''><img src={right} alt="toff" /> Acceuil</li>
-            <li className=''><img src={right} alt="toff" /> Acceuil</li>
-            <li className=''><img src={right} alt="toff" /> Acceuil</li>
+            <li className=''><img src={right} alt="toff" /> Formation</li>
+            <li className=''><img src={right} alt="toff" /> propos</li>
+            <li className=''><img src={right} alt="toff" /> Actualites</li>
+            <li className=''><img src={right} alt="toff" /> s'inscrire</li>
           </ul>
         </div>
         <div className="fot2">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Title from "../../../components/title/Title";
 import "./hero.css";
 
@@ -22,15 +23,18 @@ const Hero = () => {
             </p>
           </div>
           <div className="btn_group">
-            <button className="primary_btn btn cursor-pointer">
+            <a href="#parcourir">
+            <button  className="primary_btn btn cursor-pointer">
               Parcourir <i className="fa fa-long-arrow-alt-right"></i>
-            </button>
+            </button></a> 
+            <Link to="/formation">
             <button className="btn text-white bg-limer cursor-pointer">
               Nos Formations{" "}
               <span>
                 <i className="fa fa-long-arrow-alt-right "></i>
               </span>
             </button>
+            </Link>
           </div>
         </div>
       
