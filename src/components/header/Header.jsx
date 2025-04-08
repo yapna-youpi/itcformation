@@ -39,7 +39,7 @@ const Header = () => {
   const nav_links = [
 		{
 			path: "Formations",
-			display: "formations",
+			display: "formation",
 		},
 		{
 			path: "A propos",

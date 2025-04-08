@@ -1,9 +1,9 @@
 import React from 'react'
 
-import "./formation.css"
+import "./formations.css"
 import whatsapp from "./whatsapp.png"
 
-const Formation = () => {
+const Formations = () => {
   return (
     <div className='formation'>
         <h2 className='text-5xl font-bold text-center sm:py-10'>Nos Filiaires de Formations</h2>
@@ -101,4 +101,4 @@ const Formation = () => {
   )
 }
 
-export default Formation
+export default Formations
