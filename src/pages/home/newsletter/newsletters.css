@@ -1,9 +1,9 @@
 .newsletter{
     background: #a7d3a7;
 }
-.newsletter-content{
+/* .newsletter-content{
     min-width: 400px;
-}
+} */
 @media only screen and (max-width: 568px) {
 button{
     font-style: 17px!important;

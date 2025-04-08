@@ -33,7 +33,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      <div className="margin"></div>
+      
     </>
   );
 };

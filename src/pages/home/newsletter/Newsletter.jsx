@@ -20,7 +20,7 @@ function Newsletter() {
                 <form >
                     <div className="form-group bg-white flex items-center py-3 pl-1 md:pl-4   shadow-dark-400/40">
                         <input className='border-r w-8/12 outline-0' type="text" placeholder='Entrez votre adresse e-mail' />
-                        <button  className='button-newsletter text-xs w-2/12 md:w-4/12 ml-0 flex items-center font-semibold hover:text-limer hover:duration-500 '><i className='mx-2'><UilTelegramAlt/> </i> S'INSCRIRE</button>
+                        <button  className='button-newsletter text-xs w-2/12 xs-text-xs md:w-4/12 ml-0 flex items-center font-semibold hover:text-limer hover:duration-500 '><i className='mx-2'><UilTelegramAlt/> </i> S'INSCRIRE</button>
                     </div>
                 </form>
                 <div className="newsletter-policy">

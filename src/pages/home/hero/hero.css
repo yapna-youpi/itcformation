@@ -14,7 +14,7 @@
 }
 .hero-content{
     width: 90%;
-    margin: 75px auto !important;
+    margin: 55px auto !important;
     padding: 25px 15px;
     color: #fff;
     /* background-color: yellowgreen; */
@@ -40,9 +40,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .margin{
-        height: 40px;
-    }
     .hero{
         height: 130vh;
         background-position: right; 
@@ -51,6 +48,10 @@
     }
     .hero .row{
         width: 100%;
+    }
+    .hero-content-para{
+        color: darkslategray;
+        font-weight: bold;
     }
    
     

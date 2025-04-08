@@ -46,6 +46,10 @@ const Header = () => {
 			display: "about",
 		},
 		{
+			path: "pedagogies",
+			display: "pedagogies",
+		},
+		{
 			path: "Actualités",
 			display: "actualités",
 		},

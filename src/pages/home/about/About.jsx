@@ -9,12 +9,12 @@ import about6 from "./assets/about-6.png";
 
 const About = () => {
   return (
-    <div className="about">
-      <h2 className="text-center text-4xl">
+    <div className="about sm:pt-28">
+      <h2 className="text-center text-xl md:text-5xl font-bold">
         {" "}
         Pourquoi choisir ITC Formation ?
       </h2>
-      <section class="max-w-5xl mx-auto py-10">
+      <section class="max-w-5xl mx-auto pt-7 sm:pt-12">
         <div>
           <div class="flex flex-row">
             <div class="hidden md:flex flex-col items-center">
@@ -26,7 +26,7 @@ const About = () => {
                 <div class="border-l-4 mr-4 h-full border-lime-300 border-dashed"></div>
               </div>
             </div>
-            <div class="flex-auto border rounded  border-gray-300 shadow-md">
+            <div class="flex-auto border rounded  border-gray-300 shadow-md hover:shadow-lime-500">
               <div class="flex md:flex-row flex-col items-center">
                 <div class="flex-auto">
                   <div class="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
@@ -66,7 +66,7 @@ const About = () => {
                 <div class="border-l-4 ml-4 h-full border-lime-300 border-dashed"></div>
               </div>
             </div>
-            <div class="flex-auto border rounded  border-gray-300">
+            <div class="flex-auto border rounded  border-gray-300 shadow-md hover:shadow-lime-500">
               <div class="flex md:flex-row flex-col items-center">
                 <div class="flex-auto">
                   <div class="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
@@ -106,7 +106,7 @@ const About = () => {
                 <div class="border-l-4 mr-4 h-full border-lime-300 border-dashed"></div>
               </div>
             </div>
-            <div class="flex-auto border rounded  border-gray-300">
+            <div class="flex-auto border rounded  border-gray-300 shadow-md hover:shadow-lime-500">
               <div class="flex md:flex-row flex-col items-center">
                 <div class="flex-auto">
                   <div class="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
@@ -143,7 +143,7 @@ const About = () => {
                 <div class="text-gray-500 text-sm">Implementation</div>
               </div>
             </div>
-            <div class="flex-auto border rounded  border-gray-300">
+            <div class="flex-auto border rounded  border-gray-300 shadow-md hover:shadow-lime-500">
               <div class="flex md:flex-row flex-col items-center">
                 <div class="flex-auto">
                   <div class="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">

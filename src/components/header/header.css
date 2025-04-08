@@ -95,8 +95,8 @@ header li{
         position: absolute;
         width: 100%;
         z-index: 1000;
-        height: 70vh;
-        top: 12.5vh;
+        height: 100vh;
+        top: 10vh;
         left: 0;
         background-color: var(--secondaryColor);
         padding: 20px 70px;

@@ -3,7 +3,9 @@ import React, { useEffect } from "react";
 import faq from "./faq.jpg";
 
 const Faq = () => {
-  function openAnsSection(val) {
+
+  const openAnsSection = (val) =>  {
+    console.log('onClick lance')
     var p = document.getElementById("para" + val);
     var svg = document.getElementById("path" + val);
 
@@ -28,13 +30,13 @@ const Faq = () => {
     <div>
       <div className="2xl:container 2xl:mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
         <h2 className="font-semibold dark:text-white lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800">
-          Frequently Asked Questions
+          Foire aux Questions
         </h2>
         <div className="mt-4 flex md:justify-between md:items-start md:flex-row flex-col justify-start items-start">
           <div className="">
             <p className="font-normal dark:text-gray-400 text-base leading-6 text-gray-600 lg:w-8/12 md:w-9/12">
-              Here are few of the most frequently asked questions by our
-              valueable customers
+              Voici quelques-unes des questions les plus fréquemment posées par
+              nos clients de valeur
             </p>
           </div>
 
@@ -56,56 +58,54 @@ const Faq = () => {
               <path
                 d="M6.66667 11.3333C9.244 11.3333 11.3333 9.244 11.3333 6.66667C11.3333 4.08934 9.244 2 6.66667 2C4.08934 2 2 4.08934 2 6.66667C2 9.244 4.08934 11.3333 6.66667 11.3333Z"
                 stroke="currentColor"
-                stroke-width="1.25"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M14 14L10 10"
                 stroke="currentColor"
-                stroke-width="1.25"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
         </div>
         <div className="flex md:flex-row flex-col md:space-x-8 md:mt-16 mt-8">
           <div className="md:w-5/12 lg:w-4/12 w-full">
-              <div className="overflow-hidden  aspect-video bg-red-400 cursor-pointer  relative group">
-                <div className=" z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
-                  <div>
-                    <div className="transform-gpu  p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
-                      <div className="font-bold">Jessie Watsica</div>
+            <div className="  aspect-video bg-red-400 cursor-pointer  relative group">
+              <div className=" z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                <div>
+                  <div className="transform-gpu  p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                    <div className="font-bold">Jessie Watsica</div>
 
-                      <div className="opacity-60 text-sm ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Distinctio dolores error iure, perferendis sequi
-                        totam. Ad aliquam aperiam atque deleniti dolor dolorem
-                        enim esse et in, inventore itaque, pariatur
-                        reprehenderit.
-                      </div>
+                    <div className="opacity-60 text-sm ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio dolores error iure, perferendis sequi totam. Ad
+                      aliquam aperiam atque deleniti dolor dolorem enim esse et
+                      in, inventore itaque, pariatur reprehenderit.
                     </div>
                   </div>
                 </div>
-                <img
-                  alt=""
-                  className="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
-                  src={faq}
-                />
-                </div>
-                
+              </div>
+              <img
+                alt=""
+                className="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                src={faq}
+              />
+            </div>
           </div>
           <div className="md:w-7/12 lg:w-8/12 w-full md:mt-0 sm:mt-14 mt-10">
             <div>
               <div className="flex justify-between items-center cursor-pointer">
                 <h3 className="font-semibold text-xl  dark:text-white leading-5 text-gray-800">
-                  Shipping
+                  Departements
                 </h3>
                 <button
                   aria-label="too"
                   className="text-gray-800 dark:text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
-                  onclick="openAnsSection(1)"
+                  onClick={() => openAnsSection(1)}
                 >
                   <svg
                     width="20"
@@ -119,16 +119,16 @@ const Faq = () => {
                       className=""
                       d="M10 4.1665V15.8332"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M4.16602 10H15.8327"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -137,10 +137,9 @@ const Faq = () => {
                 id="para1"
                 className="hidden font-normal dark:text-gray-400 text-base leading-6 text-gray-600 mt-4 w-11/12"
               >
-                We are covering every major country worldwide. The shipment
-                leaves from US as it is our headquarter. Some extra information
-                you probably need to add here so that the customer is clear of
-                their wanted expectations.
+                Nous couvrons principalement les departements GESTION et
+                MANAGEMENT, TECHNOLOGIES DE L’INFORMATION & COMMUNICATION,
+                GRAPHISME 2D/3D & MULTIMÉDIA , INDUSTRIE ,
               </p>
             </div>
 
@@ -149,12 +148,12 @@ const Faq = () => {
             <div>
               <div className="flex justify-between items-center cursor-pointer">
                 <h3 className="font-semibold text-xl dark:text-white  leading-5 text-gray-800">
-                  Returns
+                  Retour
                 </h3>
                 <button
                   aria-label="too"
                   className="text-gray-800 dark:text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
-                  onclick="openAnsSection(2)"
+                  onClick={() => openAnsSection(2)}
                 >
                   <svg
                     width="20"
@@ -168,16 +167,16 @@ const Faq = () => {
                       className=""
                       d="M10 4.1665V15.8332"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M4.16602 10H15.8327"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -186,10 +185,10 @@ const Faq = () => {
                 id="para2"
                 className="hidden font-normal dark:text-gray-400 text-base leading-6 text-gray-600 mt-4 w-11/12"
               >
-                We are covering every major country worldwide. The shipment
-                leaves from US as it is our headquarter. Some extra information
-                you probably need to add here so that the customer is clear of
-                their wanted expectations.
+                Nous rencontrons tous nos pareents d'eleves et Il est
+                probablement nécessaire d'ajouter ici quelques informations
+                supplémentaires afin que le client sache clairement ce qu'il
+                attend de nous.
               </p>
             </div>
 
@@ -198,12 +197,12 @@ const Faq = () => {
             <div>
               <div className="flex justify-between items-center cursor-pointer">
                 <h3 className="font-semibold text-xl dark:text-white  leading-5 text-gray-800">
-                  Exchange
+                  Certifications
                 </h3>
                 <button
                   aria-label="too"
                   className="text-gray-800 dark:text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
-                  onclick="openAnsSection(3)"
+                  onClick={() => openAnsSection(3)}
                 >
                   <svg
                     width="20"
@@ -216,16 +215,16 @@ const Faq = () => {
                       id="path3"
                       d="M10 4.1665V15.8332"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M4.16602 10H15.8327"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -234,10 +233,8 @@ const Faq = () => {
                 id="para3"
                 className="hidden font-normal dark:text-gray-400 text-base leading-6 text-gray-600 mt-4 w-11/12"
               >
-                We are covering every major country worldwide. The shipment
-                leaves from US as it is our headquarter. Some extra information
-                you probably need to add here so that the customer is clear of
-                their wanted expectations.
+                La fin de la formation est sanctionner par les Attestations professionnelles et accréditations valorisant votre CV et maximisant votre 
+                employabilité.
               </p>
             </div>
 
@@ -246,12 +243,12 @@ const Faq = () => {
             <div>
               <div className="flex justify-between items-center cursor-pointer">
                 <h3 className="font-semibold text-xl dark:text-white  leading-5 text-gray-800">
-                  Tracking
+                  Professionalisme
                 </h3>
                 <button
                   aria-label="too"
                   className="text-gray-800 dark:text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
-                  onclick="openAnsSection(4)"
+                  onClick={() => openAnsSection(4)}
                 >
                   <svg
                     width="20"
@@ -264,16 +261,16 @@ const Faq = () => {
                       id="path4"
                       d="M10 4.1665V15.8332"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M4.16602 10H15.8327"
                       stroke="currentColor"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -282,10 +279,8 @@ const Faq = () => {
                 id="para4"
                 className="hidden font-normal dark:text-gray-400 text-base leading-6 text-gray-600 mt-4 w-11/12"
               >
-                We are covering every major country worldwide. The shipment
-                leaves from US as it is our headquarter. Some extra information
-                you probably need to add here so that the customer is clear of
-                their wanted expectations.
+                Le cadre de formation comprend des Espaces de coworking, laboratoires technologiques et équipements de pointe 
+                pour une formation en phase avec les réalités professionnelles.
               </p>
             </div>
 
